@@ -492,7 +492,7 @@ projects:
         status:
             state: active
         sync:
-            status: active
+            status: inactive
         last_opened: "2026-02-07T07:51:37Z"
     recon:
         path: archive/recon
