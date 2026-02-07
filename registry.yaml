@@ -441,7 +441,7 @@ projects:
         status:
             state: active
         sync:
-            status: active
+            status: inactive
         last_opened: "2026-02-07T18:15:34Z"
     opencode-context-plugin:
         path: archive/opencode-context-plugin
