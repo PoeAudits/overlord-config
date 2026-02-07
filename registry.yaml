@@ -224,7 +224,7 @@ projects:
         status:
             state: active
         sync:
-            status: active
+            status: inactive
         last_opened: "2026-02-07T05:50:34Z"
     blog:
         path: archive/blog
