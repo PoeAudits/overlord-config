@@ -481,6 +481,17 @@ projects:
         description: Poly web project
         status:
             state: archived
+    pulse:
+        path: projects/services/pulse
+        category: services
+        lang: go
+        created: "2026-02-06"
+        description: pulse project
+        status:
+            state: active
+        sync:
+            status: active
+        last_opened: "2026-02-07T07:02:04Z"
     recon:
         path: archive/recon
         category: contracts
