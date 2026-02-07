@@ -166,7 +166,7 @@ projects:
         status:
             state: active
         sync:
-            status: active
+            status: inactive
         last_opened: "2026-02-07T06:08:02Z"
     ai-usage:
         path: projects/services/ai-usage
@@ -442,7 +442,7 @@ projects:
             state: active
         sync:
             status: active
-        last_opened: "2026-02-06T23:06:27Z"
+        last_opened: "2026-02-07T18:15:34Z"
     opencode-context-plugin:
         path: archive/opencode-context-plugin
         category: libs
@@ -464,7 +464,7 @@ projects:
             - ol
         status:
             state: active
-        last_opened: "2026-02-07T07:24:54Z"
+        last_opened: "2026-02-07T18:15:39Z"
     poe-context-plugin:
         path: archive/poe-context-plugin
         category: sandbox
