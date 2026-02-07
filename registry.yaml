@@ -2,9 +2,18 @@ version: 2
 settings:
     base_dir: ~/Overlord
     thoughts_dir: ~/thoughts
+    sync:
+        default_exclude:
+            - node_modules
+            - .venv
+            - __pycache__
+            - .git
+            - dist
+            - build
+            - .cache
 projects:
     Blog-X402:
-        path: projects/web/Blog-X402
+        path: archive/Blog-X402
         category: web
         lang: typescript
         created: "2026-01-24"
@@ -12,7 +21,7 @@ projects:
         aliases:
             - x402
         status:
-            state: active
+            state: archived
     CodeSpace:
         path: projects/services/CodeSpace
         category: services
@@ -37,14 +46,6 @@ projects:
         lang: python
         created: "2026-01-24"
         description: DSPy Workspace project
-        status:
-            state: archived
-    Finetune_old:
-        path: archive/Finetune_old
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: Finetune old project
         status:
             state: archived
     Flashnode:
@@ -76,6 +77,7 @@ projects:
             - oracle-dspy
         status:
             state: active
+        last_opened: "2026-02-04T22:15:12Z"
     PoeDspy:
         path: archive/PoeDspy
         category: sandbox
@@ -108,16 +110,6 @@ projects:
         lang: python
         created: "2026-01-24"
         description: Tax Bot project
-        status:
-            state: archived
-    Tinker:
-        path: archive/Tinker
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: Tinker project
-        aliases:
-            - tinker
         status:
             state: archived
     Ulti:
@@ -162,6 +154,29 @@ projects:
             - windfall
         status:
             state: archived
+    agents:
+        path: /home/thomas/.agents
+        category: config
+        lang: base
+        created: "2026-01-24"
+        description: Agent configuration
+        aliases:
+            - skills
+            - commands
+        status:
+            state: active
+        last_opened: "2026-02-07T06:08:02Z"
+    ai-usage:
+        path: projects/services/ai-usage
+        category: services
+        lang: base
+        created: "2026-01-28"
+        description: ai-usage project
+        aliases:
+            - usage
+        status:
+            state: active
+        last_opened: "2026-02-06T22:07:51Z"
     alice:
         path: /home/thomas/.config/alice
         category: core-agents
@@ -178,14 +193,26 @@ projects:
         description: Anvil Agent project
         status:
             state: archived
-    bags:
-        path: archive/bags
-        category: web
-        lang: typescript
-        created: "2026-01-24"
-        description: Bags web project
+    async-sqldb:
+        path: projects/libs/async-sqldb
+        category: libs
+        lang: python
+        created: "2026-01-28"
+        description: async-sqldb project
+        aliases:
+            - db
         status:
-            state: archived
+            state: active
+        last_opened: "2026-02-05T02:01:35Z"
+    backtest:
+        path: sandbox/backtest
+        category: sandbox
+        lang: python
+        created: "2026-01-29"
+        description: backtest project
+        status:
+            state: active
+        last_opened: "2026-02-03T01:54:25Z"
     black-pheobe:
         path: projects/web/black-pheobe
         category: web
@@ -194,22 +221,15 @@ projects:
         description: Black Pheobe web project
         status:
             state: active
-    blackpheobesanity:
-        path: archive/blackpheobesanity
-        category: sandbox
-        lang: typescript
-        created: "2026-01-24"
-        description: Black Pheobe Sanity project
-        status:
-            state: archived
+        last_opened: "2026-02-07T05:50:34Z"
     blog:
-        path: projects/web/blog
+        path: archive/blog
         category: web
         lang: typescript
         created: "2026-01-24"
         description: Blog web project
         status:
-            state: active
+            state: archived
     cdp-agent:
         path: archive/cdp-agent
         category: sandbox
@@ -220,14 +240,25 @@ projects:
             - cdp
         status:
             state: archived
+    chezmoi:
+        path: /home/thomas/.local/share/chezmoi
+        category: config
+        lang: base
+        created: "2026-01-31"
+        description: Dotfiles managed with chezmoi
+        aliases:
+            - dotfiles
+        status:
+            state: active
+        last_opened: "2026-02-04T02:34:03Z"
     claude-council:
-        path: projects/libs/claude-council
+        path: archive/claude-council
         category: libs
         lang: typescript
         created: "2026-01-24"
         description: Claude Council library
         status:
-            state: active
+            state: archived
     create-chimera-app:
         path: archive/create-chimera-app
         category: libs
@@ -238,6 +269,17 @@ projects:
             - chimera
         status:
             state: archived
+    discord-stream:
+        path: projects/libs/discord-stream
+        category: libs
+        lang: python
+        created: "2026-01-28"
+        description: discord-stream project
+        aliases:
+            - discord
+        status:
+            state: active
+        last_opened: "2026-02-05T01:58:38Z"
     dispatch-go:
         path: projects/cli/dispatch-go
         category: cli
@@ -247,21 +289,21 @@ projects:
         status:
             state: active
     dispatch-ts:
-        path: projects/cli/dispatch-ts
+        path: archive/dispatch-ts
         category: cli
         lang: typescript
         created: "2026-01-24"
         description: Dispatch CLI tool (TypeScript)
         status:
-            state: active
+            state: archived
     dspy:
-        path: projects/libs/dspy
+        path: archive/dspy
         category: libs
         lang: python
         created: "2026-01-24"
         description: DSPy library
         status:
-            state: active
+            state: archived
     dspy-testing:
         path: archive/dspy-testing
         category: ml
@@ -271,13 +313,13 @@ projects:
         status:
             state: archived
     dspy-utils:
-        path: projects/libs/dspy-utils
+        path: archive/dspy-utils
         category: libs
         lang: python
         created: "2026-01-24"
         description: DSPy utilities library
         status:
-            state: active
+            state: archived
     dweb:
         path: projects/contracts/dweb
         category: contracts
@@ -296,14 +338,12 @@ projects:
             - energy
         status:
             state: archived
-    feature-extraction-utils:
-        path: projects/libs/feature-extraction-utils
-        category: libs
+    feedback:
+        path: projects/ml/feedback
+        category: ml
         lang: python
-        created: "2026-01-24"
-        description: Feature extraction utilities library
-        aliases:
-            - feature-extraction
+        created: "2026-01-27"
+        description: feedback project
         status:
             state: active
     file_management:
@@ -317,22 +357,23 @@ projects:
             - fm
         status:
             state: active
+        last_opened: "2026-02-05T04:02:48Z"
     gepa:
-        path: projects/libs/gepa
+        path: archive/gepa
         category: libs
         lang: python
         created: "2026-01-24"
         description: GEPA library
         status:
-            state: active
+            state: archived
     gopa:
-        path: core/tools/gopa
+        path: archive/gopa
         category: core-tools
         lang: go
         created: "2026-01-24"
         description: Go path utility tool
         status:
-            state: active
+            state: archived
     hermes:
         path: core/agents/hermes
         category: services
@@ -343,42 +384,14 @@ projects:
             state: active
         sync:
             status: active
-    huggingface-utils:
-        path: projects/libs/huggingface-utils
-        category: libs
-        lang: python
-        created: "2026-01-24"
-        description: HuggingFace utilities library
-        aliases:
-            - huggingface
-        status:
-            state: active
-    humanlayer:
-        path: archive/humanlayer
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: Human Layer project
-        status:
-            state: archived
-    itemsort:
-        path: archive/itemsort
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: Item Sort project
-        aliases:
-            - item
-        status:
-            state: archived
     jar:
-        path: projects/contracts/jar
+        path: archive/jar
         category: contracts
         lang: solidity
         created: "2026-01-24"
         description: Jar smart contract project
         status:
-            state: active
+            state: archived
     judgenetwork:
         path: archive/judgenetwork
         category: ml
@@ -388,7 +401,7 @@ projects:
         status:
             state: archived
     khmer-wanderlust-tours:
-        path: projects/web/khmer-wanderlust-tours
+        path: archive/khmer-wanderlust-tours
         category: web
         lang: typescript
         created: "2026-01-24"
@@ -396,7 +409,7 @@ projects:
         aliases:
             - chen
         status:
-            state: active
+            state: archived
     nuck:
         path: projects/ml/nuck
         category: ml
@@ -415,7 +428,7 @@ projects:
             state: active
     opencode:
         path: /home/thomas/.config/opencode
-        category: core-tools
+        category: config
         lang: typescript
         created: "2026-01-24"
         description: OpenCode configuration
@@ -423,6 +436,9 @@ projects:
             - oc
         status:
             state: active
+        sync:
+            status: active
+        last_opened: "2026-02-06T23:06:27Z"
     opencode-context-plugin:
         path: archive/opencode-context-plugin
         category: libs
@@ -431,41 +447,6 @@ projects:
         description: OpenCode context plugin
         aliases:
             - context-plugin
-        status:
-            state: archived
-    opencode-dynamic-context-pruning:
-        path: archive/opencode-dynamic-context-pruning
-        category: sandbox
-        lang: typescript
-        created: "2026-01-24"
-        description: OpenCode dynamic context pruning
-        aliases:
-            - odcp
-            - prune
-        status:
-            state: archived
-    opencode-lib:
-        path: projects/libs/opencode-lib
-        category: libs
-        lang: python
-        created: "2026-01-24"
-        description: OpenCode Python library
-        status:
-            state: active
-    opencode-py-archive:
-        path: archive/opencode-py-archive
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: OpenCode Python archive
-        status:
-            state: archived
-    overlord-v1:
-        path: archive/overlord-v1
-        category: core-tools
-        lang: base
-        created: "2025-12-18"
-        description: Overlord v1 - shell-based project management scripts
         status:
             state: archived
     overlord-v2:
@@ -479,6 +460,7 @@ projects:
             - ol
         status:
             state: active
+        last_opened: "2026-02-04T02:33:57Z"
     poe-context-plugin:
         path: archive/poe-context-plugin
         category: sandbox
@@ -489,33 +471,14 @@ projects:
             - context
         status:
             state: archived
-    poe-dspy-utils-fucked:
-        path: archive/poe-dspy-utils-fucked
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: Poe DSPy utils project
-        status:
-            state: archived
     poly:
-        path: projects/web/poly
+        path: archive/poly
         category: web
         lang: typescript
         created: "2026-01-24"
         description: Poly web project
         status:
-            state: active
-    pytorch-mlp-utils:
-        path: projects/libs/pytorch-mlp-utils
-        category: libs
-        lang: python
-        created: "2026-01-24"
-        description: PyTorch MLP utilities library
-        aliases:
-            - mlp
-            - mlp-utils
-        status:
-            state: active
+            state: archived
     recon:
         path: archive/recon
         category: contracts
@@ -524,12 +487,12 @@ projects:
         description: Recon smart contract project
         status:
             state: archived
-    research:
-        path: projects/ml/research
+    sage:
+        path: projects/ml/sage
         category: ml
         lang: python
-        created: "2026-01-24"
-        description: Research ML project
+        created: "2026-01-28"
+        description: sage project
         status:
             state: active
     sequence-classification-llm:
@@ -554,50 +517,26 @@ projects:
             - signal
         status:
             state: active
-    skills:
-        path: /home/thomas/.agents/skills
-        category: core-agents
-        lang: base
-        created: "2026-01-24"
-        description: Agent skills library
-        aliases:
-            - skill
+    telegram-messages-gepa:
+        path: sandbox/telegram-messages-gepa
+        category: sandbox
+        lang: python
+        created: "2026-01-30"
+        description: telegram-messages-gepa project
         status:
             state: active
-    supabase-utils:
-        path: projects/libs/supabase-utils
+        last_opened: "2026-02-04T03:15:56Z"
+    telethon-poster:
+        path: projects/libs/telethon-poster
         category: libs
         lang: python
-        created: "2026-01-24"
-        description: Supabase utilities library
+        created: "2026-01-28"
+        description: telethon-poster project
         aliases:
-            - supabase
+            - telethon
         status:
             state: active
-    testing:
-        path: archive/testing
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: Testing project
-        status:
-            state: archived
-    testing_old:
-        path: archive/testing_old
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: Testing old project
-        status:
-            state: archived
-    todolist:
-        path: archive/todolist
-        category: sandbox
-        lang: python
-        created: "2026-01-24"
-        description: Todo List project
-        status:
-            state: archived
+        last_opened: "2026-02-05T02:03:39Z"
     tokenjar:
         path: projects/contracts/tokenjar
         category: contracts
@@ -616,6 +555,17 @@ projects:
             - Toolbox
         status:
             state: archived
+    tweepy-poster:
+        path: projects/libs/tweepy-poster
+        category: libs
+        lang: python
+        created: "2026-01-28"
+        description: tweepy-poster project
+        aliases:
+            - tweepy
+        status:
+            state: active
+        last_opened: "2026-02-05T02:05:15Z"
     ultitracking:
         path: projects/contracts/ultitracking
         category: contracts
@@ -626,14 +576,15 @@ projects:
             - track
         status:
             state: active
-    v0-stylized-blog-website:
-        path: archive/v0-stylized-blog-website
-        category: sandbox
-        lang: typescript
-        created: "2026-01-24"
-        description: V0 stylized blog website
+    uniqueness:
+        path: projects/libs/uniqueness
+        category: libs
+        lang: python
+        created: "2026-01-28"
+        description: uniqueness project
         status:
-            state: archived
+            state: active
+        last_opened: "2026-02-05T01:56:30Z"
     v0-supabase-message-judging-app:
         path: projects/web/v0-supabase-message-judging-app
         category: web
