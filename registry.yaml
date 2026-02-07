@@ -385,7 +385,7 @@ projects:
         status:
             state: active
         sync:
-            status: active
+            status: inactive
     jar:
         path: archive/jar
         category: contracts
@@ -462,7 +462,7 @@ projects:
             - ol
         status:
             state: active
-        last_opened: "2026-02-04T02:33:57Z"
+        last_opened: "2026-02-07T07:24:54Z"
     poe-context-plugin:
         path: archive/poe-context-plugin
         category: sandbox
